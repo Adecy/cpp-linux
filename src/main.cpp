@@ -2,18 +2,18 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#include "class.h"
+#include "server.h"
 
-uint32_t counter = 0;
+TCPServer server = TCPServer(8080);
 
 int main()
 {
-    MyClass instance = MyClass();
+    server.init();
 
-    while(1)
-    {
-        instance.hello();
-
-        printf("counter = %d\n", counter++);
+    printf("port = %d\n", server.port);
+    while (1) {
+        server.process();
     }
+    
+    server.reset();
 }
