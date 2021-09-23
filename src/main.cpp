@@ -10,7 +10,6 @@ int main()
 {
     server.init();
 
-    printf("port = %d\n", server.port);
     while (1) {
         server.process();
     }

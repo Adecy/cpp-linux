@@ -73,7 +73,7 @@ int TCPServer::process(void)
             if (received > 0) {
                 printf("received %d bytes\n", received);
                 buffer[received] = 0;
-                printf("%s", buffer);
+                printf("> %s", buffer);
             } else {
                 printf("closing client socket\n");
                 close(received);
