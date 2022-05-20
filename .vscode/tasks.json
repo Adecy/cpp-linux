@@ -1,39 +1,64 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "cppbuild",
-			"label": "C/C++: g++ build active file",
-			"command": "/usr/bin/g++",
-			"args": [
-				"-g",
-				"${workspaceFolder}/src/*.cpp",
-				"-o",
-				"${workspaceFolder}/main"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"detail": "compiler: /usr/bin/g++"
-		},
-		{
-			"type": "shell",
-			"label": "Readelf",
-			"command": "readelf",
-			"args": [
-				"-a",
-				"main",
-				">",
-				"readelf.txt"
-			],
-			"problemMatcher": []
-		}
-	]
+    "version": "2.0.0",
+    "options": {
+        "env": {
+            "executable": "./build/samples/xmodem/sample_xmodem"
+        }
+    },
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "cd build && make",
+            "args": [],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "options": {
+                "statusbar": {
+                    "hide": false
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "${executable}",
+            "args": [],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "options": {
+                "statusbar": {
+                    "hide": false
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "detail": "rm -rf build/*",
+            "type": "shell",
+            "command": "rm -rf build/*",
+            "group": "build",
+            "args": [],
+            "options": {
+                "statusbar": {
+                    "hide": false
+                }
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "panel": "shared",
+                "clear": false
+            },
+            "problemMatcher": []
+        }
+    ]
 }

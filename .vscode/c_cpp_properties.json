@@ -1,15 +1,24 @@
 {
+    "env": {
+        "sample_name": "library",
+        "sample_path": "./samples/${sample_name}"
+    },
     "configurations": [
         {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**"
+            "name": "Debug default",
+            "defines": [
+                "__MAGIC_NUMBER__=1"
             ],
-            "defines": [],
+            "includePath": [
+                "${workspaceFolder}/libs/mylib/include/",
+                "${workspaceFolder}/include/",
+                "${sample_path}/**"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
             "compilerPath": "/usr/bin/gcc",
-            "cStandard": "gnu11",
-            "cppStandard": "gnu++11",
-            "intelliSenseMode": "linux-gcc-x64"
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4
