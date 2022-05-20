@@ -10,7 +10,8 @@
                 "__MAGIC_NUMBER__=1"
             ],
             "includePath": [
-                "${workspaceFolder}/libs/mylib/include/",
+                "${workspaceFolder}/lib/mylib/include/",
+                "${workspaceFolder}/lib/caniot-lib/include/",
                 "${workspaceFolder}/include/",
                 "${sample_path}/**"
             ],

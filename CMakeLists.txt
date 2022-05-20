@@ -18,6 +18,6 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 
 include_directories(include)
 
-add_subdirectory(libs)
+add_subdirectory(lib)
 
 add_subdirectory(samples)
