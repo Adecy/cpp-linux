@@ -8,7 +8,7 @@
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/build/exe",
+            "program": "${workspaceRoot}/build/samples/pthread/sample_pthread",
             "args": [
 
             ],

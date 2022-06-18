@@ -9,7 +9,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "cd build && make",
+            "command": "make",
             "args": [],
             "group": "build",
             "presentation": {
