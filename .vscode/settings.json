@@ -2,6 +2,7 @@
     "files.associations": {
         "*.asm": "avr",
         "logging.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdarg.h": "c"
     }
 }

@@ -8,6 +8,7 @@
  * @copyright Copyright (c) 2022
  * 
  * Notes:
+ *   - Tested with GCC
  *   - after including this header, define LOG_LEVEL to one of this file constant : LOG_LEVEL_*
  * Example
  * 	#include "logging.h"
