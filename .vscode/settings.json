@@ -3,6 +3,8 @@
         "*.asm": "avr",
         "logging.h": "c",
         "stdio.h": "c",
-        "stdarg.h": "c"
-    }
+        "stdarg.h": "c",
+        "libparser.h": "c"
+    },
+    "editor.rulers": [80]
 }

@@ -1,3 +1,6 @@
 [submodule "lib/caniot-lib"]
 	path = lib/caniot-lib
 	url = https://github.com/lucasdietrich/caniot-lib.git
+[submodule "lib/lua"]
+	path = lib/lua
+	url = https://github.com/lua/lua.git

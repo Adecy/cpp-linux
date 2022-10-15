@@ -8,3 +8,12 @@ target_include_directories(spike_array_typedef PUBLIC .)
 
 add_executable(spike_sscanf sscanf.c)
 target_include_directories(spike_sscanf PUBLIC .)
+
+add_executable(spike_structsize structsize.c)
+target_include_directories(spike_structsize PUBLIC .)
+
+add_executable(spike_urlmatch urlmatch.c)
+target_include_directories(spike_urlmatch PUBLIC .)
+
+add_executable(spike_filepath filepath.c)
+target_include_directories(spike_filepath PUBLIC .)

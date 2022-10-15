@@ -5,10 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
+            "name": "Debug spike_filepath",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/build/samples/pthread/sample_pthread",
+            "program": "${workspaceRoot}/build/samples/spikes/spike_filepath",
+            "args": [
+
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Debug sample_parser",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/samples/parser/sample_parser",
             "args": [
 
             ],

@@ -5,17 +5,14 @@
     },
     "configurations": [
         {
-            "name": "Debug default",
-            "defines": [
-                "__MAGIC_NUMBER__=1"
-            ],
-            "includePath": [
-                "${workspaceFolder}/lib/mylib/include/",
-                "${workspaceFolder}/lib/caniot-lib/include/",
-                "${workspaceFolder}/include/",
-                "${sample_path}/**"
-            ],
+            "name": "x86",
+            "compileCommands": "${workspaceRoot}/build/compile_commands.json",
             "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ]
+            },
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
