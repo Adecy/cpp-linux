@@ -7,4 +7,4 @@ add_executable(${exe} ${SOURCES})
 
 target_include_directories(${exe} PUBLIC .)
 
-target_link_libraries(${exe} PUBLIC libparser)
+target_link_libraries(${exe} PUBLIC embedcutils)

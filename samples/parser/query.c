@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <memory.h>
 
-#include <libparser/libparser.h>
+#include <embedc/parser.h>
 
 char tests[][100u] = {
 	"?&&&qsfd",

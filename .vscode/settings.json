@@ -7,7 +7,8 @@
         "libparser.h": "c",
         "memory.h": "c",
         "stdbool.h": "c",
-        "errno.h": "c"
+        "errno.h": "c",
+        "common.h": "c"
     },
     "editor.rulers": [80],
 }

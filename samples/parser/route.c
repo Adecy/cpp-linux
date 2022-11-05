@@ -5,7 +5,7 @@
 
 #include <common.h>
 
-#include <libparser/libparser.h>
+#include <embedc/parser.h>
 
 void web_server_index_html(void){}
 void web_server_files_html(void){}
@@ -244,7 +244,7 @@ static const struct route_descr root[] = {
 
 /* https://stackoverflow.com/questions/12447557/can-we-have-recursive-macros */
 
-bool route_parser_cb(struct route_path_part *s, void *user_data)
+bool route_parser_cb(struct route_part *s, void *user_data)
 {
 	char url[256];
 	memcpy(url, s->str, s->len);
@@ -290,8 +290,8 @@ void test_route(void)
 	// char url[] = "/devices/caniot/12/endpoint/blc/command";
 	// char url[] = "/test/route_args/24232312/-1/43";
 	// char url[] = "/devices/caniot/23/attribute/EEff";
-	// char url[] = "/test/customSTR/mystr";
-	char url[] = "/test/customSTR/azer/qsd";
+	char url[] = "/test/customSTR/mystr";
+	// char url[] = "/test/customSTR/azer/qsd";
 
 	// int ret;
 	// ret = route_parse(url, route_parser_cb, NULL);

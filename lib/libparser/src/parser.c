@@ -102,7 +102,7 @@ int route_parse(char *url,
 	int ret = 0;
 	bool zcontinue = true;
 
-	struct route_path_part s;
+	struct route_part s;
 	s.str = url;
 	s.len = 0u;
 
@@ -189,7 +189,7 @@ exit:
 }
 
 static bool route_part_parse(const struct route_descr *node,
-			     const struct route_path_part *part,
+			     const struct route_part *part,
 			     void *arg)
 {
 	if (node->flags & ARG_INT) {
@@ -263,7 +263,7 @@ static inline void mark_route_found(struct resolve_context *x)
 	x->child_count = 0u;
 }
 
-static int route_tree_resolve_cb(struct route_path_part *p,
+static int route_tree_resolve_cb(struct route_part *p,
 				 void *user_data)
 {
 	struct resolve_context *x = user_data;

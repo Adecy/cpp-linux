@@ -26,15 +26,7 @@ static inline bool query_arg_is_set(const char *key, struct query_arg qargs[], s
 
 /* Route parse */
 
-struct route_url {
-	const char *url;
-
-	size_t url_len;
-
-	size_t args_count;
-};
-
-struct route_path_part
+struct route_part
 {
 	const char *str;
 	size_t len;
@@ -68,7 +60,7 @@ struct route_descr
 {
 	uint32_t flags;
 
-	struct route_path_part part;
+	struct route_part part;
 
 	union {
 		struct {
@@ -106,7 +98,7 @@ struct route_descr
 		}, \
 	}
 
-typedef int (*route_parser_cb_t)(struct route_path_part *s,
+typedef int (*route_parser_cb_t)(struct route_part *s,
 				 void *user_data);
 
 int route_parse(char *url,
