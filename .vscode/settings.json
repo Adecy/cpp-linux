@@ -4,7 +4,10 @@
         "logging.h": "c",
         "stdio.h": "c",
         "stdarg.h": "c",
-        "libparser.h": "c"
+        "libparser.h": "c",
+        "memory.h": "c",
+        "stdbool.h": "c",
+        "errno.h": "c"
     },
-    "editor.rulers": [80]
+    "editor.rulers": [80],
 }

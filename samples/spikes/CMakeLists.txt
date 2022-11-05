@@ -17,3 +17,6 @@ target_include_directories(spike_urlmatch PUBLIC .)
 
 add_executable(spike_filepath filepath.c)
 target_include_directories(spike_filepath PUBLIC .)
+
+add_executable(spike_route route.c)
+target_include_directories(spike_route PUBLIC .)
