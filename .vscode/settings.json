@@ -8,7 +8,13 @@
         "memory.h": "c",
         "stdbool.h": "c",
         "errno.h": "c",
-        "common.h": "c"
+        "common.h": "c",
+        "class1.h": "c",
+        "datatype.h": "c",
+        "caniot.h": "c",
+        "stdint.h": "c",
+        "compare": "c",
+        "type_traits": "c"
     },
     "editor.rulers": [80],
 }

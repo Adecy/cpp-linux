@@ -4,5 +4,6 @@ add_subdirectory(fork)
 add_subdirectory(net-socket)
 add_subdirectory(caniot-test)
 add_subdirectory(parser)
+add_subdirectory(mbedtls)
 
 add_subdirectory(spikes)

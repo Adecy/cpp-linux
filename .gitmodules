@@ -7,3 +7,6 @@
 [submodule "lib/embedc-utils"]
 	path = lib/embedc-utils
 	url = git@github.com:lucasdietrich/embedc-utils.git
+[submodule "lib/mbedtls"]
+	path = lib/mbedtls
+	url = git@github.com:Mbed-TLS/mbedtls.git

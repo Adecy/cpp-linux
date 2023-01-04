@@ -11,6 +11,8 @@ char tests[][100u] = {
 	"abc?def&&jkl=mno&&=23&&",
 	"abc?def&&=mno&",
 	"?=&=&===&",
+	"aze=23&a=2",
+	"a=1&b=2?c=3&d=4",
 };
 
 static void test(char *url)

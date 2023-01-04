@@ -20,3 +20,6 @@ target_include_directories(spike_filepath PUBLIC .)
 
 add_executable(spike_route route.c)
 target_include_directories(spike_route PUBLIC .)
+
+add_executable(spike_misc misc.c)
+target_include_directories(spike_route PUBLIC .)
