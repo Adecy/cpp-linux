@@ -5,8 +5,8 @@
 
 #include <common.h>
 
-#include <embedc/parser.h>
-#include <embedc/parser_internal.h>
+#include <embedc-url/parser.h>
+#include <embedc-url/parser_internal.h>
 
 void web_server_index_html(void){}
 void web_server_files_html(void){}

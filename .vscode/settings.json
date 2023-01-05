@@ -14,7 +14,9 @@
         "caniot.h": "c",
         "stdint.h": "c",
         "compare": "c",
-        "type_traits": "c"
+        "type_traits": "c",
+        "parser.h": "c",
+        "parser_internal.h": "c"
     },
     "editor.rulers": [80],
 }

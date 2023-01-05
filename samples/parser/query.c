@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <memory.h>
 
-#include <embedc/parser.h>
+#include <embedc-url/parser.h>
 
 char tests[][100u] = {
 	"?&&&qsfd",

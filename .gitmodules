@@ -4,9 +4,9 @@
 [submodule "lib/lua"]
 	path = lib/lua
 	url = https://github.com/lua/lua.git
-[submodule "lib/embedc-utils"]
-	path = lib/embedc-utils
-	url = git@github.com:lucasdietrich/embedc-utils.git
 [submodule "lib/mbedtls"]
 	path = lib/mbedtls
 	url = git@github.com:Mbed-TLS/mbedtls.git
+[submodule "lib/embedc-url"]
+	path = lib/embedc-url
+	url = https://github.com/lucasdietrich/embedc-url
