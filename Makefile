@@ -19,6 +19,3 @@ clean:
 
 run: build
 	./build/samples/library/sample_library
-
-routes_generate:
-	python3 lib/embedc-url/scripts/genroutes.py samples/parser/route.c
