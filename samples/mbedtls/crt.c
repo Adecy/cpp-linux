@@ -46,7 +46,7 @@ int main(void)
 	ret = mbedtls_x509_crt_parse_der_nocopy(&crt, (const unsigned char *)buf,
 						(size_t)ret);
 	if (ret < 0) {
-		printf("mbedtls_x509_crt_parse_der_nocopy: %x", -ret);
+		printf("mbedtls_x509_crt_parse_der_nocopy: %x\n", -ret);
 		return ret;
 	}
 
@@ -54,7 +54,7 @@ int main(void)
 
 	ret = mbedtls_x509_crt_info(str, sizeof(str), "  ", &crt);
 	if (ret < 0) {
-		printf("mbedtls_x509_crt_info: %x", -ret);
+		printf("mbedtls_x509_crt_info: %x\n", -ret);
 		return ret;
 	}
 

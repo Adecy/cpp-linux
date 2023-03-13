@@ -16,7 +16,8 @@
         "compare": "c",
         "type_traits": "c",
         "parser.h": "c",
-        "parser_internal.h": "c"
+        "parser_internal.h": "c",
+        "errors.h": "c"
     },
     "editor.rulers": [80],
 }

@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
-add_executable(sample_mbedtls main.c)
-target_include_directories(sample_mbedtls PUBLIC .)
+set(exe sample_mbedtls_crt)
+add_executable(${exe} crt.c)
+target_include_directories(${exe} PUBLIC .)
 
-target_link_libraries(sample_mbedtls mbedtls mbedcrypto mbedx509)
+target_link_libraries(${exe} mbedtls mbedcrypto mbedx509)

@@ -23,3 +23,6 @@ target_include_directories(spike_route PUBLIC .)
 
 add_executable(spike_misc misc.c)
 target_include_directories(spike_route PUBLIC .)
+
+add_executable(spike_preproc preproc.c)
+target_include_directories(spike_preproc PUBLIC .)
